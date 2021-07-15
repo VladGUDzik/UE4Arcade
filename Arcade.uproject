@@ -17,10 +17,6 @@
 		{
 			"Name": "EnhancedInput",
 			"Enabled": true
-		},
-		{
-			"Name": "MultiUserClient",
-			"Enabled": true
 		}
 	]
 }
