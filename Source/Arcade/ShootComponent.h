@@ -1,23 +1,27 @@
-// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+#include "Components/ActorComponent.h"//компонент родитель ,стандартный класс UE4
 #include <Arcade/Projectail.h>
 #include "ShootComponent.generated.h"
 
+//структура выстрелов
 USTRUCT(BlueprintType)
 struct FShoot_inf
 {
 	GENERATED_BODY()
 public:
 	UPROPERTY(Category = "Shoot", EditAnywhere, BlueprintReadWrite)
-		FVector GunOffset;
+		FVector GunOffset;//координаты 
 	UPROPERTY(Category = "Shoot", EditAnywhere, BlueprintReadWrite)
-		float Angle;
+		float Angle;//угол
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Shoot")
-		TSubclassOf<AProjectail> Project_Class;
+		TSubclassOf<AProjectail> Project_Class;//массив самописного класса Projectail'ов 
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Shoot")
+		float Damage;//урон
+
 };
 
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
@@ -26,28 +30,27 @@ class ARCADE_API UShootComponent : public UActorComponent
 	GENERATED_BODY()
 
 public:
-	// Sets default values for this component's properties
 	UShootComponent();
 
 protected:
-	// Called when the game starts
-	virtual void BeginPlay() override;
-	void Fire_Shoot();
 	
-	FTimerHandle Shoot_in_the_Dark;
+	virtual void BeginPlay() override;
+	void Fire_Shoot();//выстрел
+	
+	FTimerHandle Shoot_in_the_Dark;//сруктура для таймера
 
 public:
 
 	UFUNCTION(BlueprintCallable, Category = "Shoot")
-		void StartShotting();
+		void StartShotting();//начало выстрелов
 
 	UFUNCTION(BlueprintCallable, Category = "Shoot")
-		void StopShotting();
+		void StopShotting();//конец выстрелов
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Shoot")
-		float Shoot_Interval;
+		float Shoot_Interval;//интервал 
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Shoot")
-     TArray<FShoot_inf>Shoot_infs;
+     TArray<FShoot_inf>Shoot_infs;//массив из структуры 
 
 };
