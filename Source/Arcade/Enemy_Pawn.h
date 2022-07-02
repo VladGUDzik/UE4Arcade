@@ -58,6 +58,7 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Ship")
 		UStaticMeshComponent* EnemyMesh;
+
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Ship")
 		UBoxComponent* EnemyCollision;
 
