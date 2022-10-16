@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Source/Arcade/ArcadeGameModeBase.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Source/Arcade/ArcadeGameModeBase.h" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Source/Arcade/Arcade_GameInstance.h" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Source/Arcade/Bonus.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Source/Arcade/Bonus.h" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Source/Arcade/Bonus_SHIELD.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Source/Arcade/Bonus_SHIELD.h" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Source/Arcade/EnemySpawnComponent.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Source/Arcade/EnemySpawnComponent.h" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Source/Arcade/Enemy_Pawn.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Source/Arcade/Enemy_Pawn.h" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Source/Arcade/LIVE_Component.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Source/Arcade/LIVE_Component.h" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Source/Arcade/Projectail.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Source/Arcade/Projectail.h" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Source/Arcade/Ship.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Source/Arcade/Ship.h" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Source/Arcade/ShipCameraShake.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Source/Arcade/ShootComponent.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Source/Arcade/ShootComponent.h" charset="windows-1251" />
+  </component>
+</project>
